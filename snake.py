@@ -39,10 +39,10 @@ canvas = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
 pygame.display.set_caption('Snake')
 
 # Définition des images du jeu
-snake_img = pygame.image.load('snakehead_green.png')
-apple_img = pygame.image.load('apple_normal.png')
-tail_img = pygame.image.load('snakebody1_green.png')
-art4 = pygame.image.load('background.png')
+snake_img = pygame.image.load('img/snakehead_green.png')
+apple_img = pygame.image.load('img/apple_normal.png')
+tail_img = pygame.image.load('img/snakebody1_green.png')
+art4 = pygame.image.load('img/background.png')
 
 apple_img_rect = apple_img.get_rect()
 
@@ -53,7 +53,7 @@ pygame.mixer.music.load('snake-music.mp3')
 def start_game():
     
     # Charger l'image de fond
-    background_img = pygame.image.load('background3.png')
+    background_img = pygame.image.load('img/background3.png')
     
     
     # Afficher l'image de fond
@@ -113,7 +113,7 @@ def start_game():
 def gameover(show_score):
     
      # Charger l'image de fond
-    background_img_game_over = pygame.image.load('game_over.jpg')
+    background_img_game_over = pygame.image.load('img/game_over.jpg')
     
     # Afficher l'image de fond
     canvas.blit(background_img_game_over, (0, 0))
@@ -169,7 +169,7 @@ def gameover(show_score):
 def add_name_score(score):
 
      # Charger l'image de fond
-    background_img_score = pygame.image.load('score.jpg')
+    background_img_score = pygame.image.load('img/score.jpg')
     
     # Afficher l'image de fond
     canvas.blit(background_img_score, (0, 0))
@@ -231,7 +231,7 @@ def score():
     global art4
     
      # Charger l'image de fond
-    background_img_score = pygame.image.load('score.jpg')
+    background_img_score = pygame.image.load('img/score.jpg')
     
     # Afficher l'image de fond
     canvas.blit(background_img_score, (0, 0))
@@ -373,7 +373,7 @@ def gameloop():
 
 
             # Charger l'image de fond
-            background_img_game = pygame.image.load('game.jpg')
+            background_img_game = pygame.image.load('img/game.jpg')
     
             # Afficher l'image de fond
             canvas.blit(background_img_game, (0, 0))
